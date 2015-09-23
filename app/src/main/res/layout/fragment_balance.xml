@@ -1,0 +1,199 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ensisa.ganesh.abluetoothdriver.fora.balance.BalanceFragment"
+    android:padding="16dp">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0.0Kg"
+                android:textSize="100dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:id="@+id/text_view_weight_xl"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User parameters"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:layout_marginBottom="16dp"/>
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+                <TableRow android:layout_marginBottom="16dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="User"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_view_user"
+                        android:text="--"
+                        android:layout_weight="1.5"
+                        android:textSize="@dimen/abc_text_size_medium_material"/>
+                </TableRow>
+                <TableRow android:layout_marginBottom="16dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_view_gender"
+                        android:text="--"
+                        android:layout_weight="1.5"
+                        android:textSize="@dimen/abc_text_size_medium_material"/>
+                </TableRow>
+                <TableRow android:layout_marginBottom="16dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Age"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_view_age"
+                        android:layout_weight="1.5"
+                        android:text="--"
+                        android:textSize="@dimen/abc_text_size_medium_material"/>
+                </TableRow>
+                <TableRow android:layout_marginBottom="16dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Height"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_view_height"
+                        android:text="--"
+                        android:layout_weight="1.5"
+                        android:textSize="@dimen/abc_text_size_medium_material"/>
+
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Measurements"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow android:layout_marginBottom="16dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Weight"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_view_weight"
+                        android:layout_weight="1.5"
+                        android:textSize="@dimen/abc_text_size_medium_material"
+                        android:text="--" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="16dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Body fat ratio"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_view_body_fat_ratio"
+                        android:layout_weight="1.5"
+                        android:textSize="@dimen/abc_text_size_medium_material"
+                        android:text="--" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="16dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Basal Metabolism"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_view_basal_metabolism"
+                        android:layout_weight="1.5"
+                        android:textSize="@dimen/abc_text_size_medium_material"
+                        android:text="--" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="16dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Moisture Content"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_view_moisture_content"
+                        android:layout_weight="1.5"
+                        android:textSize="@dimen/abc_text_size_medium_material"
+                        android:text="--" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="16dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Muscle Ratio"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_view_muscle_ratio"
+                        android:layout_weight="1.5"
+                        android:textSize="@dimen/abc_text_size_medium_material"
+                        android:text="--" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="16dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Skeleton weight"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_view_skeleton_weight"
+                        android:layout_weight="1.5"
+                        android:textSize="@dimen/abc_text_size_medium_material"
+                        android:text="--" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

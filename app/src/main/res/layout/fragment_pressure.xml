@@ -1,0 +1,154 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ensisa.ganesh.abluetoothdriver.fora.pressure.PressureFragment"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memory count"
+            android:textSize="@dimen/abc_text_size_medium_material" />
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TableRow android:layout_width="fill_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="25"
+                    android:layout_width="fill_parent"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:text="User 1"
+                        android:layout_gravity="center" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:id="@+id/text_view_user_1_memory_count" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Get"
+                        android:id="@+id/button_get_user_1_data"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="25"
+                    android:layout_gravity="center"
+                    android:layout_width="fill_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:text="User 2"
+                        android:layout_gravity="center" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:id="@+id/text_view_user_2_memory_count" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Get"
+                        android:id="@+id/button_get_user_2_data"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="25">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:text="User 3"
+                        android:layout_gravity="center" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:id="@+id/text_view_user_3_memory_count" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Get"
+                        android:id="@+id/button_get_user_3_data"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="25">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User 4"
+                        android:layout_gravity="center" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:id="@+id/text_view_user_4_memory_count" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Get"
+                        android:id="@+id/button_get_user_4_data"/>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:id="@+id/text_view_current_user"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--/--"
+                android:textSize="80dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:id="@+id/text_view_mean_pressure"
+                android:textIsSelectable="false"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mmHg"
+                android:layout_gravity="bottom|center|right"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_view_pressure"
+            tools:listitem="@layout/pressure_list_item">
+
+        </ListView>
+    </LinearLayout>
+
+</FrameLayout>

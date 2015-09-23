@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:weightSum="100">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="33"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 Dec 2015"
+                android:gravity="center_vertical"
+                android:id="@+id/text_view_clock"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+            <TextView
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ear"
+                android:gravity="center_vertical"
+                android:id="@+id/text_view_temperature_type"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="33">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Ambient"
+                android:gravity="center"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="23.8\u00b0"
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:gravity="center"
+                android:id="@+id/text_view_ambient_temperature"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="33">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Object"
+                android:gravity="center"
+                android:textSize="@dimen/abc_text_size_small_material"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="23.8\u00b0"
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:gravity="center"
+                android:id="@+id/text_view_object_temperature"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
